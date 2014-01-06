@@ -1,0 +1,322 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">iPhoneSimulator</Platform>
+    <ProductVersion>10.0.0</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{61BB80A5-C16E-4C9B-9E6F-71035B510F19}</ProjectGuid>
+    <ProjectTypeGuids>{6BC8ED88-2882-458C-8E55-DFD12B67127B};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>ProScanMobile</RootNamespace>
+    <IPhoneResourcePrefix>Resources</IPhoneResourcePrefix>
+    <AssemblyName>ProScanMobile</AssemblyName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhoneSimulator' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\iPhoneSimulator\Debug</OutputPath>
+    <DefineConstants>DEBUG;__MOBILE__;__IOS__;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <MtouchLink>None</MtouchLink>
+    <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
+    <MtouchDebug>true</MtouchDebug>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhoneSimulator' ">
+    <DebugType>full</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\iPhoneSimulator\Release</OutputPath>
+    <DefineConstants>__MOBILE__;__IOS__;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <MtouchLink>None</MtouchLink>
+    <ConsolePause>false</ConsolePause>
+    <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhone' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\iPhone\Debug</OutputPath>
+    <DefineConstants>DEBUG;__MOBILE__;__IOS__;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
+    <MtouchDebug>true</MtouchDebug>
+    <CodesignKey>iPhone Developer</CodesignKey>
+    <MtouchI18n>
+    </MtouchI18n>
+    <MtouchArch>ARMv7</MtouchArch>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <IpaPackageName>
+    </IpaPackageName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhone' ">
+    <DebugType>full</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\iPhone\Release</OutputPath>
+    <DefineConstants>__MOBILE__;__IOS__;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
+    <ConsolePause>false</ConsolePause>
+    <CodesignKey>iPhone Developer</CodesignKey>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Ad-Hoc|iPhone' ">
+    <DebugType>full</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\iPhone\Ad-Hoc</OutputPath>
+    <DefineConstants>__MOBILE__;__IOS__;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
+    <BuildIpa>true</BuildIpa>
+    <CodesignProvision>Automatic:AdHoc</CodesignProvision>
+    <CodesignKey>iPhone Distribution</CodesignKey>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'AppStore|iPhone' ">
+    <DebugType>full</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\iPhone\AppStore</OutputPath>
+    <DefineConstants>__MOBILE__;__IOS__;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
+    <CodesignProvision>Automatic:AppStore</CodesignProvision>
+    <CodesignKey>iPhone Distribution</CodesignKey>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="monotouch" />
+    <Reference Include="GCDiscreetNotification">
+      <HintPath>..\..\..\Downloads\gcdiscreetnotification-1.0\lib\ios\GCDiscreetNotification.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="..\..\ProScanMobile+\ProScanMobile+\Resources\led_display-7.ttf">
+      <Link>Resources\led_display-7.ttf</Link>
+    </BundleResource>
+    <BundleResource Include="..\..\ProScanMobile+\ProScanMobile+\Images\config_button.jpg">
+      <Link>Images\config_button.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\..\ProScanMobile+\ProScanMobile+\Images\folder_button.png">
+      <Link>Images\folder_button.png</Link>
+    </BundleResource>
+    <BundleResource Include="..\..\ProScanMobile+\ProScanMobile+\Images\green_button.jpg">
+      <Link>Images\green_button.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\..\ProScanMobile+\ProScanMobile+\Images\network_button.png">
+      <Link>Images\network_button.png</Link>
+    </BundleResource>
+    <BundleResource Include="..\..\ProScanMobile+\ProScanMobile+\Images\rec_activate_button.jpg">
+      <Link>Images\rec_activate_button.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\..\ProScanMobile+\ProScanMobile+\Images\rec_deactivate_button.jpg">
+      <Link>Images\rec_deactivate_button.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\..\ProScanMobile+\ProScanMobile+\Images\red_button.jpg">
+      <Link>Images\red_button.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\..\ProScanMobile+\ProScanMobile+\Images\refresh_servers_button.jpg">
+      <Link>Images\refresh_servers_button.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\..\ProScanMobile+\ProScanMobile+\Images\scanner_button_0.jpg">
+      <Link>Images\scanner_button_0.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\..\ProScanMobile+\ProScanMobile+\Images\scanner_button_1.jpg">
+      <Link>Images\scanner_button_1.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\..\ProScanMobile+\ProScanMobile+\Images\scanner_button_2.jpg">
+      <Link>Images\scanner_button_2.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\..\ProScanMobile+\ProScanMobile+\Images\scanner_button_3.jpg">
+      <Link>Images\scanner_button_3.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\..\ProScanMobile+\ProScanMobile+\Images\scanner_button_4.jpg">
+      <Link>Images\scanner_button_4.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\..\ProScanMobile+\ProScanMobile+\Images\scanner_button_5.jpg">
+      <Link>Images\scanner_button_5.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\..\ProScanMobile+\ProScanMobile+\Images\scanner_button_6.jpg">
+      <Link>Images\scanner_button_6.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\..\ProScanMobile+\ProScanMobile+\Images\scanner_button_7.jpg">
+      <Link>Images\scanner_button_7.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\..\ProScanMobile+\ProScanMobile+\Images\scanner_button_8.jpg">
+      <Link>Images\scanner_button_8.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\..\ProScanMobile+\ProScanMobile+\Images\scanner_button_9.jpg">
+      <Link>Images\scanner_button_9.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\..\ProScanMobile+\ProScanMobile+\Images\scanner_button_eyes.jpg">
+      <Link>Images\scanner_button_eyes.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\..\ProScanMobile+\ProScanMobile+\Images\scanner_button_func.jpg">
+      <Link>Images\scanner_button_func.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\..\ProScanMobile+\ProScanMobile+\Images\scanner_button_funch.jpg">
+      <Link>Images\scanner_button_funch.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\..\ProScanMobile+\ProScanMobile+\Images\scanner_button_funcr.jpg">
+      <Link>Images\scanner_button_funcr.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\..\ProScanMobile+\ProScanMobile+\Images\scanner_button_hold.jpg">
+      <Link>Images\scanner_button_hold.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\..\ProScanMobile+\ProScanMobile+\Images\scanner_button_left.jpg">
+      <Link>Images\scanner_button_left.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\..\ProScanMobile+\ProScanMobile+\Images\scanner_button_lockout.jpg">
+      <Link>Images\scanner_button_lockout.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\..\ProScanMobile+\ProScanMobile+\Images\scanner_button_menu.jpg">
+      <Link>Images\scanner_button_menu.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\..\ProScanMobile+\ProScanMobile+\Images\scanner_button_no.jpg">
+      <Link>Images\scanner_button_no.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\..\ProScanMobile+\ProScanMobile+\Images\scanner_button_right.jpg">
+      <Link>Images\scanner_button_right.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\..\ProScanMobile+\ProScanMobile+\Images\scanner_button_scan.jpg">
+      <Link>Images\scanner_button_scan.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\..\ProScanMobile+\ProScanMobile+\Images\scanner_display.jpg">
+      <Link>Images\scanner_display.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\..\ProScanMobile+\ProScanMobile+\Images\signal_0.png">
+      <Link>Images\signal_0.png</Link>
+    </BundleResource>
+    <BundleResource Include="..\..\ProScanMobile+\ProScanMobile+\Images\signal_1.png">
+      <Link>Images\signal_1.png</Link>
+    </BundleResource>
+    <BundleResource Include="..\..\ProScanMobile+\ProScanMobile+\Images\signal_2.png">
+      <Link>Images\signal_2.png</Link>
+    </BundleResource>
+    <BundleResource Include="..\..\ProScanMobile+\ProScanMobile+\Images\signal_3.png">
+      <Link>Images\signal_3.png</Link>
+    </BundleResource>
+    <BundleResource Include="..\..\ProScanMobile+\ProScanMobile+\Images\signal_4.png">
+      <Link>Images\signal_4.png</Link>
+    </BundleResource>
+    <BundleResource Include="..\..\ProScanMobile+\ProScanMobile+\Images\signal_5.png">
+      <Link>Images\signal_5.png</Link>
+    </BundleResource>
+    <BundleResource Include="..\..\ProScanMobile+\ProScanMobile+\Images\slider_thumb.png">
+      <Link>Images\slider_thumb.png</Link>
+    </BundleResource>
+    <BundleResource Include="..\..\ProScanMobile+\ProScanMobile+\Images\state_off.png">
+      <Link>Images\state_off.png</Link>
+    </BundleResource>
+    <BundleResource Include="..\..\ProScanMobile+\ProScanMobile+\Images\state_on.png">
+      <Link>Images\state_on.png</Link>
+    </BundleResource>
+    <BundleResource Include="..\..\ProScanMobile+\ProScanMobile+\Sounds\connected.mp3">
+      <Link>Sounds\connected.mp3</Link>
+    </BundleResource>
+    <BundleResource Include="..\..\ProScanMobile+\ProScanMobile+\Sounds\disconnected.mp3">
+      <Link>Sounds\disconnected.mp3</Link>
+    </BundleResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Info.plist" />
+    <None Include="Entitlements.plist" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Main.cs" />
+    <Compile Include="..\..\ProScanMobile+\ProScanMobile+\AppDelegate.cs">
+      <Link>AppDelegate.cs</Link>
+    </Compile>
+    <Compile Include="..\..\ProScanMobile+\ProScanMobile+\Classes\Encryption.cs">
+      <Link>Classes\Encryption.cs</Link>
+    </Compile>
+    <Compile Include="..\..\ProScanMobile+\ProScanMobile+\Classes\NetworkConnection.cs">
+      <Link>Classes\NetworkConnection.cs</Link>
+    </Compile>
+    <Compile Include="..\..\ProScanMobile+\ProScanMobile+\Classes\NetworkStatus.cs">
+      <Link>Classes\NetworkStatus.cs</Link>
+    </Compile>
+    <Compile Include="..\..\ProScanMobile+\ProScanMobile+\Classes\ReadWriteBuffer.cs">
+      <Link>Classes\ReadWriteBuffer.cs</Link>
+    </Compile>
+    <Compile Include="..\..\ProScanMobile+\ProScanMobile+\Classes\RecTableCell.cs">
+      <Link>Classes\RecTableCell.cs</Link>
+    </Compile>
+    <Compile Include="..\..\ProScanMobile+\ProScanMobile+\Classes\RecTableItem.cs">
+      <Link>Classes\RecTableItem.cs</Link>
+    </Compile>
+    <Compile Include="..\..\ProScanMobile+\ProScanMobile+\Classes\RecTableSource.cs">
+      <Link>Classes\RecTableSource.cs</Link>
+    </Compile>
+    <Compile Include="..\..\ProScanMobile+\ProScanMobile+\Classes\ScannerAudio.cs">
+      <Link>Classes\ScannerAudio.cs</Link>
+    </Compile>
+    <Compile Include="..\..\ProScanMobile+\ProScanMobile+\Classes\ScannerScreen.cs">
+      <Link>Classes\ScannerScreen.cs</Link>
+    </Compile>
+    <Compile Include="..\..\ProScanMobile+\ProScanMobile+\Classes\StreamingPlaybackV2.cs">
+      <Link>Classes\StreamingPlaybackV2.cs</Link>
+    </Compile>
+    <Compile Include="..\..\ProScanMobile+\ProScanMobile+\Classes\TableCell.cs">
+      <Link>Classes\TableCell.cs</Link>
+    </Compile>
+    <Compile Include="..\..\ProScanMobile+\ProScanMobile+\Classes\TableItem.cs">
+      <Link>Classes\TableItem.cs</Link>
+    </Compile>
+    <Compile Include="..\..\ProScanMobile+\ProScanMobile+\Classes\TableSource.cs">
+      <Link>Classes\TableSource.cs</Link>
+    </Compile>
+    <Compile Include="..\..\ProScanMobile+\ProScanMobile+\Screens\vcMainScreen.cs">
+      <Link>Screens\vcMainScreen.cs</Link>
+    </Compile>
+    <Compile Include="..\..\ProScanMobile+\ProScanMobile+\Screens\vcMainScreen.designer.cs">
+      <Link>Screens\vcMainScreen.designer.cs</Link>
+    </Compile>
+    <Compile Include="..\..\ProScanMobile+\ProScanMobile+\Screens\vcOptionsScreen.cs">
+      <Link>Screens\vcOptionsScreen.cs</Link>
+    </Compile>
+    <Compile Include="..\..\ProScanMobile+\ProScanMobile+\Screens\vcOptionsScreen.designer.cs">
+      <Link>Screens\vcOptionsScreen.designer.cs</Link>
+    </Compile>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <ItemGroup>
+    <Folder Include="Classes\" />
+    <Folder Include="Screens\" />
+    <Folder Include="Sounds\" />
+    <Folder Include="Images\" />
+  </ItemGroup>
+  <ItemGroup>
+    <InterfaceDefinition Include="..\..\ProScanMobile+\ProScanMobile+\Screens\vcMainScreen.xib">
+      <Link>Screens\vcMainScreen.xib</Link>
+    </InterfaceDefinition>
+    <InterfaceDefinition Include="..\..\ProScanMobile+\ProScanMobile+\Screens\vcOptionsScreen.xib">
+      <Link>Screens\vcOptionsScreen.xib</Link>
+    </InterfaceDefinition>
+  </ItemGroup>
+  <ItemGroup>
+    <ImageAsset Include="Resources\Images.xcassets\LaunchImage.launchimage\Contents.json" />
+    <ImageAsset Include="Resources\Images.xcassets\LaunchImage.launchimage\Default.png" />
+    <ImageAsset Include="Resources\Images.xcassets\LaunchImage.launchimage\Default%402x.png" />
+    <ImageAsset Include="Resources\Images.xcassets\LaunchImage.launchimage\Default-568h%402x.png" />
+    <ImageAsset Include="Resources\Images.xcassets\AppIcons.appiconset\Contents.json" />
+    <ImageAsset Include="Resources\Images.xcassets\AppIcons.appiconset\Icon.png" />
+    <ImageAsset Include="Resources\Images.xcassets\AppIcons.appiconset\Icon%402x.png" />
+    <ImageAsset Include="Resources\Images.xcassets\AppIcons.appiconset\Icon-60%402x.png" />
+  </ItemGroup>
+</Project>
