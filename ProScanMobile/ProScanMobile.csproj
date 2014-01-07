@@ -109,9 +109,6 @@
     <BundleResource Include="..\..\ProScanMobile+\ProScanMobile+\Resources\led_display-7.ttf">
       <Link>Resources\led_display-7.ttf</Link>
     </BundleResource>
-    <BundleResource Include="..\..\ProScanMobile+\ProScanMobile+\Images\config_button.jpg">
-      <Link>Images\config_button.jpg</Link>
-    </BundleResource>
     <BundleResource Include="..\..\ProScanMobile+\ProScanMobile+\Images\folder_button.png">
       <Link>Images\folder_button.png</Link>
     </BundleResource>
@@ -129,9 +126,6 @@
     </BundleResource>
     <BundleResource Include="..\..\ProScanMobile+\ProScanMobile+\Images\red_button.jpg">
       <Link>Images\red_button.jpg</Link>
-    </BundleResource>
-    <BundleResource Include="..\..\ProScanMobile+\ProScanMobile+\Images\refresh_servers_button.jpg">
-      <Link>Images\refresh_servers_button.jpg</Link>
     </BundleResource>
     <BundleResource Include="..\..\ProScanMobile+\ProScanMobile+\Images\scanner_button_0.jpg">
       <Link>Images\scanner_button_0.jpg</Link>
@@ -231,6 +225,9 @@
     </BundleResource>
     <BundleResource Include="..\..\ProScanMobile+\ProScanMobile+\Sounds\disconnected.mp3">
       <Link>Sounds\disconnected.mp3</Link>
+    </BundleResource>
+    <BundleResource Include="..\..\ProScanMobile+\ProScanMobile+\Images\servers_button.png">
+      <Link>Images\servers_button.png</Link>
     </BundleResource>
   </ItemGroup>
   <ItemGroup>
