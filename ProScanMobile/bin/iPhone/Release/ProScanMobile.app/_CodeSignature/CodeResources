@@ -18,11 +18,7 @@
 		</data>
 		<key>GCDiscreetNotification.dll</key>
 		<data>
-		gnBOP8bHBmEvpVaFFVH/FDKXhCc=
-		</data>
-		<key>Images/config_button.jpg</key>
-		<data>
-		DLz8D6+LFL+Y4BAHWIbI3hVeVdA=
+		njC39SKQ6s56coStNtsCWl8D5pY=
 		</data>
 		<key>Images/folder_button.png</key>
 		<data>
@@ -47,10 +43,6 @@
 		<key>Images/red_button.jpg</key>
 		<data>
 		6mvPsroAQB3umQv06aQm/flqY7o=
-		</data>
-		<key>Images/refresh_servers_button.jpg</key>
-		<data>
-		WkbYT5ZUWA6nlBOxp3jQeGFm18w=
 		</data>
 		<key>Images/scanner_button_0.jpg</key>
 		<data>
@@ -140,6 +132,10 @@
 		<data>
 		daXoHz4b3hF0XbvCRrN3RxVxkKI=
 		</data>
+		<key>Images/servers_button.png</key>
+		<data>
+		vMXtO8V2kv4G0vpZysOFAeciRA0=
+		</data>
 		<key>Images/signal_0.png</key>
 		<data>
 		Vfn/YWPDDyqbhyp1E2qXvhKkLmc=
@@ -198,7 +194,7 @@
 		</data>
 		<key>ProScanMobile.exe</key>
 		<data>
-		L4Fb1Fb3+DBFHmLQEd8c85GHdC0=
+		avkBgkcNbEmDJAxZGPYLr2hBlCE=
 		</data>
 		<key>Sounds/connected.mp3</key>
 		<data>
@@ -210,15 +206,15 @@
 		</data>
 		<key>System.Core.dll</key>
 		<data>
-		fzrt+mAT4twT813ft9Sv5Lbj9qw=
+		RG0yu8i1LGDkA45O4FI6G/XZ1HY=
 		</data>
 		<key>System.Xml.dll</key>
 		<data>
-		FO9sYVM++sVw9hWo6Tw8lJptJVs=
+		y0fzghGvj/0K7mjuEnm+il1L8ms=
 		</data>
 		<key>System.dll</key>
 		<data>
-		Cs8aGy7CXa1wpHyyeBqf9WdqxFw=
+		gC6I3iucTtIqybM6vJnBvlExdpY=
 		</data>
 		<key>embedded.mobileprovision</key>
 		<data>
@@ -230,19 +226,19 @@
 		</data>
 		<key>monotouch.dll</key>
 		<data>
-		WiY8q+ukHNcE7XWpd4TZgHuytwA=
+		+0oB1VZCBU931gGJhc05ZNQrkfI=
 		</data>
 		<key>mscorlib.dll</key>
 		<data>
-		wPrLqQYVgEdTzu/MfI+TNGNWSuY=
+		yLDQEVv6H2mC2ZbkTJTquVq9dRA=
 		</data>
 		<key>vcMainScreen.nib</key>
 		<data>
-		Vx2ExZqsv40T4mClJmqg1yQrPO8=
+		GK2HLVTQbhWB2SGmvptDUo0IxgA=
 		</data>
 		<key>vcOptionsScreen.nib</key>
 		<data>
-		sJBK6zxNbMtHNm3FBWv5SkGCiow=
+		1fR4DFmJdEAvSghAjl/9XFpZKFk=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -261,11 +257,7 @@
 		</data>
 		<key>GCDiscreetNotification.dll</key>
 		<data>
-		gnBOP8bHBmEvpVaFFVH/FDKXhCc=
-		</data>
-		<key>Images/config_button.jpg</key>
-		<data>
-		DLz8D6+LFL+Y4BAHWIbI3hVeVdA=
+		njC39SKQ6s56coStNtsCWl8D5pY=
 		</data>
 		<key>Images/folder_button.png</key>
 		<data>
@@ -290,10 +282,6 @@
 		<key>Images/red_button.jpg</key>
 		<data>
 		6mvPsroAQB3umQv06aQm/flqY7o=
-		</data>
-		<key>Images/refresh_servers_button.jpg</key>
-		<data>
-		WkbYT5ZUWA6nlBOxp3jQeGFm18w=
 		</data>
 		<key>Images/scanner_button_0.jpg</key>
 		<data>
@@ -383,6 +371,10 @@
 		<data>
 		daXoHz4b3hF0XbvCRrN3RxVxkKI=
 		</data>
+		<key>Images/servers_button.png</key>
+		<data>
+		vMXtO8V2kv4G0vpZysOFAeciRA0=
+		</data>
 		<key>Images/signal_0.png</key>
 		<data>
 		Vfn/YWPDDyqbhyp1E2qXvhKkLmc=
@@ -441,7 +433,7 @@
 		</data>
 		<key>ProScanMobile.exe</key>
 		<data>
-		L4Fb1Fb3+DBFHmLQEd8c85GHdC0=
+		avkBgkcNbEmDJAxZGPYLr2hBlCE=
 		</data>
 		<key>Sounds/connected.mp3</key>
 		<data>
@@ -453,15 +445,15 @@
 		</data>
 		<key>System.Core.dll</key>
 		<data>
-		fzrt+mAT4twT813ft9Sv5Lbj9qw=
+		RG0yu8i1LGDkA45O4FI6G/XZ1HY=
 		</data>
 		<key>System.Xml.dll</key>
 		<data>
-		FO9sYVM++sVw9hWo6Tw8lJptJVs=
+		y0fzghGvj/0K7mjuEnm+il1L8ms=
 		</data>
 		<key>System.dll</key>
 		<data>
-		Cs8aGy7CXa1wpHyyeBqf9WdqxFw=
+		gC6I3iucTtIqybM6vJnBvlExdpY=
 		</data>
 		<key>embedded.mobileprovision</key>
 		<data>
@@ -473,19 +465,19 @@
 		</data>
 		<key>monotouch.dll</key>
 		<data>
-		WiY8q+ukHNcE7XWpd4TZgHuytwA=
+		+0oB1VZCBU931gGJhc05ZNQrkfI=
 		</data>
 		<key>mscorlib.dll</key>
 		<data>
-		wPrLqQYVgEdTzu/MfI+TNGNWSuY=
+		yLDQEVv6H2mC2ZbkTJTquVq9dRA=
 		</data>
 		<key>vcMainScreen.nib</key>
 		<data>
-		Vx2ExZqsv40T4mClJmqg1yQrPO8=
+		GK2HLVTQbhWB2SGmvptDUo0IxgA=
 		</data>
 		<key>vcOptionsScreen.nib</key>
 		<data>
-		sJBK6zxNbMtHNm3FBWv5SkGCiow=
+		1fR4DFmJdEAvSghAjl/9XFpZKFk=
 		</data>
 	</dict>
 	<key>rules</key>
